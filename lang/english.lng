@@ -1,8 +1,8 @@
 ##grflangid 0x01 
 
-STR_GRF_NAME					:U&RaTT 0.8
-STR_GRF_DESCRIPTION				:Adds new graphical roads to use the features supported by NRT. This set includes a wide selection of roads: unpaved, asphalt and "decorative" roads.{}Tram and trolleybus tracks are available if you have connected other tram and trolleybus sets.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
-STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?t=84591
+STR_GRF_NAME					:U&RaTT 0.8 Hard Mode
+STR_GRF_DESCRIPTION				:"Hard Mode" Forked by John Franklin. Under GPL v3.{}Adds new graphical roads to use the features supported by NRT. This set includes a wide selection of roads: unpaved, asphalt and "decorative" roads.{}Tram and trolleybus tracks are available if you have connected other tram and trolleybus sets.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?t=90219
 
 STR_GRF_NAME_MINI				:U&RaTT: Mini v5
 STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Types of roads (including trolleybus and tram) that are minimized to simplify the gameplay, and adjust the speed limits on each road.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
@@ -39,6 +39,7 @@ STR_PARAM_URDX_SPEED_DESC						:For players who want to choose speed limits on a
 STR_PARAM_DRDX_SPEED_NAME						:Speed limit on all "decorative" roads
 STR_PARAM_DRDX_SPEED_DESC						:For players who want to choose speed limits on all "decorative" roads.
 
+STR_PARAM_HARD_MODE                             :Hard Mode where towns only build Class C types, and Class A types do not allow houses
 STR_PARAM_SPEED_SLOW							:Slow
 STR_PARAM_SPEED_DEFAULT							:Default
 STR_PARAM_SPEED_FAST							:Fast
@@ -87,7 +88,7 @@ STR_BUILD_WINDOW_CAPTION_3RDR					:New Subway
 STR_AUTOREPLACE_3RDR							:Subway
 STR_NEW_ENGINE_3RDR								:Subway
 
-STR_ELECTRIFIELD								:{LTBLUE}(electrifield)
+STR_ELECTRIFIELD								:{LTBLUE}(electrified)
 STR_3RD_POWERED									:{GREEN}(3rd powered)
 
 STR_CLASS_C										:{SILVER}(class C)

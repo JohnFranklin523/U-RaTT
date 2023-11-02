@@ -1,0 +1,187 @@
+##grflangid 0x56
+
+STR_GRF_NAME					:U&RaTT 0.8: 困难模式
+STR_GRF_DESCRIPTION				:"困难模式" 由 John Franklin 改编. 受 GPL v3 版权协议保护.{} 在NRT支持下增加新的道路类型. 本扩展囊括各种道路: 未铺砌, 柏油 及 "装饰性" 道路.{}如果和有轨或无轨电车扩展一同使用, 本扩展也会提供多种电车轨道.{}{}{BLACK}需要版本 {SILVER}13.0 {BLACK}或更新{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+STR_GRF_URL				    	:https://www.tt-forums.net/viewtopic.php?t=90219
+
+STR_GRF_NAME_MINI				:U&RaTT: Mini v5
+STR_GRF_DESCRIPTION_MINI		:These kits belong to {YELLOW}U&RaTT{BLACK}.{}Types of roads (including trolleybus and tram) that are minimized to simplify the gameplay, and adjust the speed limits on each road.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+STR_ERROR						:{ORANGE}Incompatibility {YELLOW}U&RaTT
+
+STR_GRF_NAME_LIGHTING			:U&RaTT: Lighting v4
+STR_GRF_DESCRIPTION_LIGHTING	:This set replaces the tram tracks and overheads with eye candy objects.{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v3{}
+
+STR_GRF_NAME_SUBWAY				:Metro(NRT)
+STR_GRF_DESCRIPTION_SUBWAY		:Adds a subway in the form of tram tracks. Required label: NAA3{}{}{BLACK}Requires version {SILVER}13.0 {BLACK}or later{}{}©2020 Yuri Gashin{}Draw or coded by {LTBLUE}Ufiby™{}{BLACK}License: {SILVER}GPL v2{}
+
+STR_OPENTTD_VERSION								:13.0
+
+STR_PARAM_GUI_NAME		           	        	:图形界面
+STR_PARAM_GUI_DESC             		    	    :显示与各种 OpenTTD 风格相应的图标.{}如果您选择了 {SILVER}U&GUI {BLACK}图形界面, 您需要加载GRF: {SILVER}U&GUI
+STR_PARAM_GUI_0									:TTD (运输大亨)
+STR_PARAM_GUI_1									:OpenGFX
+STR_PARAM_GUI_2									:U&GUI
+
+STR_PARAM_ROAD_AVAILABLE_NAME					:年代选择
+STR_PARAM_ROAD_AVAILABLE_DESC					:本变量设置道路可用年代及城镇建设道路模式.{}{SILVER}默认{BLACK}模式下, 一些道路只在特定年份后可用.{}{SILVER}连续{BLACK}模式下, 城镇建设的道路样式会更新, 但限速保持 {SILVER}50 {BLACK}km/h.
+STR_PARAM_ROAD_AVAILABLE_0						:默认
+STR_PARAM_ROAD_AVAILABLE_1						:连续
+
+STR_PARAM_ORDX_SPEED_NAME						:未铺砌道路限速
+STR_PARAM_ORDX_SPEED_DESC						:更改未铺砌道路限速: 土路, 砾石路...
+
+STR_PARAM_ARDX_SPEED_NAME						:柏油路限速
+STR_PARAM_ARDX_SPEED_DESC						:更改柏油路限速: 三级, 二级, 一级.
+
+STR_PARAM_URDX_SPEED_NAME						:城镇柏油路限速
+STR_PARAM_URDX_SPEED_DESC						:更改城镇柏油路限速.
+
+STR_PARAM_DRDX_SPEED_NAME						:"装饰性" 道路限速
+STR_PARAM_DRDX_SPEED_DESC						:更改 "装饰性" 道路限速.
+
+STR_PARAM_HARD_MODE                             :困难模式: 城镇只建设三级公路, 且一级公路不允许房屋生成
+STR_PARAM_SPEED_SLOW							:慢
+STR_PARAM_SPEED_DEFAULT							:默认
+STR_PARAM_SPEED_FAST							:快
+STR_PARAM_SPEED_UNLIMIT							:不限速
+
+STR_PARAM_WRD0_SPEED_NAME						:高速公路限速 (km/h)
+STR_PARAM_WRD0_SPEED_DESC						:设置{SILVER}高速公路{BLACK}限速. 可能会有 1-2 km/h 的误差.
+
+STR_PEDESTRIAN_ZONE_NAME						:步行区
+STR_PEDESTRIAN_ZONE_DESC						:步行区是专为行人设计的城镇区域.
+STR_PEDESTRIAN_ZONE_0							:不允许建设
+STR_PEDESTRIAN_ZONE_1							:允许建设 / 禁止车辆进入
+STR_PEDESTRIAN_ZONE_2							:允许建设 / 允许车辆进入, 限速 30 km/h
+STR_PEDESTRIAN_ZONE_3							:允许建设 / 允许车辆进入, 限速 60 km/h
+
+STR_PARAM_STYLE_NAME							:道路标线颜色
+STR_PARAM_STYLE_DESC							:该变量调整路面风格, 即道路标线颜色: {WHITE}白色{BLACK}或{YELLOW}黄色
+STR_PARAM_STYLE_WHITE							:{WHITE}白色
+STR_PARAM_STYLE_YELLOW							:{YELLOW}黄色
+
+STR_PARAM_MENU_NAME								:在道路建设目录中显示特定标识
+STR_PARAM_MENU_DESC								:在道路建设目录中显示或隐藏标识{} {SILVER}{TRAIN} {BLACK}- 不允许公铁平交路口{} {SILVER}{BUS} {BLACK}- 不允许房屋生成
+
+STR_PARAM_DISABLE_NAME							:移除非必需和未使用道路
+STR_PARAM_DISABLE_DESC							:本变量旨在与其他道路包混合使用时精简道路种类: 电气化道路, 非电气化电车轨道将被移除.{}开启时无法建设无轨电车和非电气化有轨电车.
+
+STR_STRING_UNLIMITED                            :不限速
+
+STR_BUILD_WINDOW_CAPTION_ROAD 			        :新车辆
+STR_AUTOREPLACE_ROAD 	    				    :道路车辆
+STR_NEW_ENGINE_ROAD 		   				    :道路车辆
+
+STR_BUILD_WINDOW_CAPTION_ELRD					:新电气化道路车辆
+STR_AUTOREPLACE_ELRD							:电气化道路车辆
+STR_NEW_ENGINE_ELRD								:电气化道路车辆
+
+STR_BUILD_WINDOW_CAPTION_TRAM					:新有轨电车
+STR_AUTOREPLACE_TRAM							:有轨电车
+STR_NEW_ENGINE_TRAM								:有轨电车
+
+STR_BUILD_WINDOW_CAPTION_TRAM_EL				:新电气化有轨电车
+STR_AUTOREPLACE_TRAM_EL							:电气化有轨电车
+STR_NEW_ENGINE_TRAM_EL							:电气化有轨电车
+
+STR_BUILD_WINDOW_CAPTION_3RDR					:新地铁车辆
+STR_AUTOREPLACE_3RDR							:地铁车辆
+STR_NEW_ENGINE_3RDR								:地铁车辆
+
+STR_ELECTRIFIELD								:{LTBLUE}(电气化)
+STR_3RD_POWERED									:{GREEN}(第三轨供电)
+
+STR_CLASS_C										:{SILVER}(三级)
+STR_CLASS_B										:{SILVER}(二级)
+STR_CLASS_A										:{SILVER}(一级)
+
+STR_NAME_LIGHTING								:照明 
+
+STR_BOTH										:{YELLOW}(双面)
+STR_RIGHT										:{YELLOW}(右侧)
+STR_LEFT										:{YELLOW}(左侧)
+
+STR_TRAIN										:{GRAY}{TRAIN}{WHITE}
+STR_BUS											:{GRAY}{BUS}{WHITE}
+STR_BUS_TRAIN									:{GRAY}{BUS} {TRAIN}{WHITE}
+STR_WHITE										:{WHITE}
+
+STR_NAME_ROAD									:地方所属道路
+STR_TOOLBAR_CAPTION_ROAD    		            :道路
+STR_TOOLBAR_CAPTION_TRAM						:电车轨道
+
+STR_CONSTRUCTION								:建设
+
+STR_NAME_TRD0									:城镇道路
+STR_NAME_ORD0							        :田野小路
+STR_NAME_ORD1							        :林间小路
+STR_NAME_ORD2         						    :土路
+STR_NAME_ORD3									:沙路
+STR_NAME_ORD4          						    :砾石路
+STR_NAME_SRD0									:砌石路
+STR_NAME_SRD1									:水泥混凝土道路
+STR_NAME_SRD2									:混凝土砖路
+STR_NAME_ARD0									:柏油路
+STR_NAME_ARD1									:带有标线的柏油路
+STR_NAME_WRD0									:高速公路
+STR_NAME_WRD1									:高等级高速公路
+STR_NAME_URD0									:城镇柏油路
+STR_NAME_URD1									:带有标线的城镇柏油路
+STR_NAME_URD2									:带有路肩的道路
+STR_NAME_DRD0									:步行区
+STR_NAME_DRD1									:板砖路
+STR_NAME_DRD2									:鹅卵石路
+STR_NAME_DRD3									:ISR 道路
+STR_NAME_DRD4									:水泥砖路
+STR_NAME_DRD5									:混凝土路
+
+STR_NAME_RAIL									:电车轨道
+STR_NAME_NBAN									:改良电车轨道
+STR_NAME_NUAN									:城镇电车轨道
+STR_NAME_NUBN									:现代化城镇电车轨道
+STR_NAME_NUCN									:绿色电车轨道
+STR_NAME_NIAN									:ISR 电车轨道
+
+STR_NAME_NAA3									:地铁轨道
+STR_NAME_NUA3									:城镇地铁轨道
+
+STR_PARAM_ORD2_SPEED_NAME						:土路限速 (km/h)
+STR_PARAM_ORD2_SPEED_DESC						:Set speed limits on {SILVER}Dirt road
+
+STR_PARAM_ORD3_SPEED_NAME						:砾石路限速 (km/h)
+STR_PARAM_ORD3_SPEED_DESC						:Set speed limits on {SILVER}Gravel road
+
+STR_PARAM_SRD1_SPEED_NAME						:水泥混凝土道路限速 (km/h)
+STR_PARAM_SRD1_SPEED_DESC						:Set speed limits on {SILVER}Cement concrete road
+
+STR_PARAM_ARD0_SPEED_NAME						:柏油路限速 (km/h)
+STR_PARAM_ARD0_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road
+
+STR_PARAM_ARD3_SPEED_NAME						:二级柏油路限速 (km/h)
+STR_PARAM_ARD3_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road (class B)
+
+STR_PARAM_ARD5_SPEED_NAME						:一级柏油路限速 (km/h)
+STR_PARAM_ARD5_SPEED_DESC						:Set speed limits on {SILVER}Asphalt road (class A)
+
+STR_PARAM_DRD3_SPEED_NAME						:ISR 道路限速 (km/h)
+STR_PARAM_DRD3_SPEED_DESC						:Set speed limits on {SILVER}ISR road
+
+STR_PARAM_RAIL_SPEED_NAME						:非电气化电车轨道限速 (km/h)
+STR_PARAM_RAIL_SPEED_DESC						:Set speed limits on {SILVER}Tramway
+
+STR_PARAM_ELRL_SPEED_NAME						:电气化电车轨道限速 (km/h)
+STR_PARAM_ELRL_SPEED_DESC						:Set speed limits on {SILVER}Electric tramway
+
+STR_PARAM_NIAE_SPEED_NAME						:ISR 电气化电车轨道限速 (km/h)
+STR_PARAM_NIAE_SPEED_DESC						:Set speed limits on {SILVER}ISR tramway (Electric)
+
+STR_PARAM_NAA3_SPEED_NAME						:地铁轨道限速 (km/h)
+STR_PARAM_NAA3_SPEED_DESC						:Set speed limit on {SILVER}Metro
+
+STR_PARAM_NUA3_SPEED_NAME						:城镇地铁轨道限速 (km/h)
+STR_PARAM_NUA3_SPEED_DESC						:Set speed limit on {SILVER}Urban metro
+
+STR_STRING_2									:{STRING} {STRING}
+STR_STRING_3									:{STRING} {STRING} {STRING}
+STR_STRING_4									:{STRING} {STRING} {STRING} {STRING}
+STR_STRING_5									:{STRING} {STRING} {STRING} {STRING} {STRING}
