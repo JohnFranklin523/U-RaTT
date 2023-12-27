@@ -48,6 +48,9 @@ STR_PARAM_SPEED_UNLIMIT							:Unlimited
 STR_PARAM_WRD0_SPEED_NAME						:Speed limit: Highway (km/h)
 STR_PARAM_WRD0_SPEED_DESC						:Set speed limits on {SILVER}Highway
 
+STR_PARAM_WRD1_SPEED_NAME						:Speed limit: Expressway (km/h)
+STR_PARAM_WRD1_SPEED_DESC						:Set speed limits on {SILVER}Expressway
+
 STR_PEDESTRIAN_ZONE_NAME						:Pedestrian zone
 STR_PEDESTRIAN_ZONE_DESC						:A pedestrian zone is an urban area designed exclusively for pedestrian traffic.
 STR_PEDESTRIAN_ZONE_0							:Disable

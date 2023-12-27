@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
 	url:  string(STR_GRF_URL);
-	version: 3;
+	version: 4;
 	min_compatible_version: 1;
 	param 0 {
         param_gui {
@@ -155,6 +155,19 @@ grf {
 	name: string(STR_PARAM_DISABLE_NAME);
 	desc: string(STR_PARAM_DISABLE_DESC);
 	def_value: 0;
+		}
+	}
+	param 11 {
+	param_WRD1_speed {
+	    type: int;
+	    name: string(STR_PARAM_WRD1_SPEED_NAME);
+	    desc: string(STR_PARAM_WRD1_SPEED_DESC);
+	    min_value: 29;
+	    max_value: 511;
+	    def_value: 29;
+	    names: {
+			29: string(STR_STRING_UNLIMITED);
+			};
 		}
 	}
 }
@@ -5000,6 +5013,7 @@ if (roadtype_available("WRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
 								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_HOUSES, ROADTYPE_FLAG_NO_LEVEL_CROSSING);
+			roadtype_extra_flags:		bitmask(ROADTYPE_EXTRA_FLAG_NO_TOWN_MODIFY);
 			introduction_date: 			date(1960,01,01);
 			speed_limit:				(param_WRD0_speed == 29) ? 0 : (param_WRD0_speed) km/h;
 			construction_cost:			45;
@@ -5047,7 +5061,9 @@ if (roadtype_available("WRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
 								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			roadtype_flags: 			bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
+			roadtype_extra_flags:		bitmask(ROADTYPE_EXTRA_FLAG_NO_TOWN_MODIFY);
 			introduction_date: 			date(1980,01,01);
+			speed_limit:				(param_WRD1_speed == 29) ? 0 : (param_WRD1_speed) km/h;
 			construction_cost:			54;
 			maintenance_cost: 			54;
 			sort_order: 				21;

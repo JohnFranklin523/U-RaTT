@@ -48,6 +48,9 @@ STR_PARAM_SPEED_UNLIMIT							:不限速
 STR_PARAM_WRD0_SPEED_NAME						:高速公路限速 (km/h)
 STR_PARAM_WRD0_SPEED_DESC						:设置{SILVER}高速公路{BLACK}限速. 可能会有 1-2 km/h 的误差.
 
+STR_PARAM_WRD1_SPEED_NAME						:高等级高速公路限速 (km/h)
+STR_PARAM_WRD1_SPEED_DESC						:设置{SILVER}高等级高速公路{BLACK}限速. 可能会有 1-2 km/h 的误差.
+
 STR_PEDESTRIAN_ZONE_NAME						:步行区
 STR_PEDESTRIAN_ZONE_DESC						:步行区是专为行人设计的城镇区域.
 STR_PEDESTRIAN_ZONE_0							:不允许建设
