@@ -5,13 +5,13 @@ grf {
 	url:  string(STR_GRF_URL);
 	version: 4;
 	min_compatible_version: 1;
-		param 0 {
-			param_standardisation {
-				type: bool;
-				name: string(STR_PARAM_STANDARDISATION_NAME);
-				desc: string(STR_PARAM_STANDARDISATION_DESC);
-			}
+	param 0 {
+	param_standardisation {
+			type: bool;
+			name: string(STR_PARAM_STANDARDISATION_NAME);
+			desc: string(STR_PARAM_STANDARDISATION_DESC);
 		}
+	}
 	param 1 {
         param_gui {
             type: int;
@@ -4387,6 +4387,20 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 //===========================================================
 //					FIELD ROAD (ORD0)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ORD0_road, 1) {
+		property {
+			label:					"RBaN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ORD0_road, 1) {
+		property {
+			label:					"ORD0";
+		}
+	}
+}
+
 if (roadtype_available("ORD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD0_road, 1) {
 		property {
@@ -4433,6 +4447,20 @@ if (roadtype_available("ORD0") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //						FOREST DIRT ROAD (ORD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ORD1_road, 2) {
+		property {
+			label:					"RCaN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ORD1_road, 2) {
+		property {
+			label:					"ORD1";
+		}
+	}
+}
+
 if (roadtype_available("ORD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD1_road, 2) {
 		property {
@@ -4479,6 +4507,20 @@ if (roadtype_available("ORD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //						DIRT ROAD (ORD2)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ORD0_road, 3) {
+		property {
+			label:					"RDaN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ORD0_road, 3) {
+		property {
+			label:					"ORD2";
+		}
+	}
+}
+
 if (roadtype_available("ORD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD2_road, 3) {
 		property {
@@ -4516,6 +4558,20 @@ if (roadtype_available("ORD2") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //						SAND ROAD (ORD3)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ORD3_road, 4) {
+		property {
+			label:					"REaN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ORD3_road, 4) {
+		property {
+			label:					"ORD3";
+		}
+	}
+}
+
 if (roadtype_available("ORD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD3_road, 4) {
 		property {
@@ -4562,6 +4618,20 @@ if (roadtype_available("ORD3") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //						GRAVEL ROAD (ORD4)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ORD4_road, 5) {
+		property {
+			label:					"RCAN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ORD4_road, 5) {
+		property {
+			label:					"ORD4";
+		}
+	}
+}
+
 if (roadtype_available("ORD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ORD4_road, 5) {
 		property {
@@ -4608,6 +4678,20 @@ if (roadtype_available("ORD4") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //						PAVED STONE ROAD (SRD0)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, SRD0_road, 6) {
+		property {
+			label:					"REAN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, SRD0_road, 6) {
+		property {
+			label:					"SRD0";
+		}
+	}
+}
+
 if (roadtype_available("SRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD0_road, 6) {
 		property {
@@ -4643,8 +4727,22 @@ if (roadtype_available("SRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 		}
 	}
 //===========================================================
-//					CONCRETE ROAD (SRD1)
+//					CEMENT CONCRETE ROAD (SRD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, SRD1_road, 8) {
+		property {
+			label:					"RABN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, SRD1_road, 8) {
+		property {
+			label:					"SRD1";
+		}
+	}
+}
+
 if (roadtype_available("SRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD1_road, 8) {
 		property {
@@ -4683,6 +4781,20 @@ if (roadtype_available("SRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					CONCRETE SLAB OF ROAD (SRD2)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, SRD2_road, 9) {
+		property {
+			label:					"RBBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, SRD2_road, 9) {
+		property {
+			label:					"SRD2";
+		}
+	}
+}
+
 if (roadtype_available("SRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, SRD2_road, 9) {
 		property {
@@ -4730,6 +4842,20 @@ if (roadtype_available("SRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					ASPHALT ROAD (ARD0)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD0_road, 10) {
+		property {
+			label:					"RCBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD0_road, 10) {
+		property {
+			label:					"ARD0";
+		}
+	}
+}
+
 if (roadtype_available("ARD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD0_road, 10) {
 		property {
@@ -4774,6 +4900,20 @@ if (roadtype_available("ARD0") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					ASPHALT ROAD W/ STRIPES (ARD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD1_road, 12) {
+		property {
+			label:					"RACN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD1_road, 12) {
+		property {
+			label:					"ARD1";
+		}
+	}
+}
+
 if (roadtype_available("ARD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD1_road, 12) {
 		property {
@@ -4817,6 +4957,20 @@ if (roadtype_available("ARD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					IMPROVED ASPHALT ROAD (ARD2)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD2_road, 14) {
+		property {
+			label:					"RDBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD2_road, 14) {
+		property {
+			label:					"ARD2";
+		}
+	}
+}
+
 if (roadtype_available("ARD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD2_road, 14) {
 		property {
@@ -4855,6 +5009,20 @@ if (roadtype_available("ARD2") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //				IMPROVED ASPHALT ROAD /W STRIPES (ARD3)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD3_road, 15) {
+		property {
+			label:					"RBCN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD3_road, 15) {
+		property {
+			label:					"ARD3";
+		}
+	}
+}
+
 if (roadtype_available("ARD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD3_road, 15) {
 		property {
@@ -4899,6 +5067,20 @@ if (roadtype_available("ARD3") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //			MODERN ASPHALT ROAD (ARD4)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD4_road, 17) {
+		property {
+			label:					"REBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD4_road, 17) {
+		property {
+			label:					"ARD4";
+		}
+	}
+}
+
 if (roadtype_available("ARD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD4_road, 17) {
 		property {
@@ -4950,6 +5132,20 @@ if (roadtype_available("ARD4") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //			MODERN ASPHALT ROAD /W STRIPES (ARD5)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, ARD5_road, 18) {
+		property {
+			label:					"RCCN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, ARD5_road, 18) {
+		property {
+			label:					"ARD5";
+		}
+	}
+}
+
 if (roadtype_available("ARD5") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, ARD5_road, 18) {
 		property {
@@ -5002,6 +5198,20 @@ if (roadtype_available("ARD5") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					HIGHWAY (WRD0)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, WRD0_road, 20) {
+		property {
+			label:					"RDCN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, WRD0_road, 20) {
+		property {
+			label:					"WRD0";
+		}
+	}
+}
+
 if (roadtype_available("WRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, WRD0_road, 20) {
 		property {
@@ -5050,6 +5260,20 @@ if (roadtype_available("WRD0") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					EXPRESSWAY (WRD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, WRD1_road, 0) {
+		property {
+			label:					"RECN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, WRD1_road, 0) {
+		property {
+			label:					"WRD1";
+		}
+	}
+}
+
 if (roadtype_available("WRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, WRD1_road, 21) {
 		property {
@@ -5098,6 +5322,20 @@ if (roadtype_available("WRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					URBAN ASPHALT ROAD (URD0)
 //===========================================================
+
+if (param[0]) {
+	item (FEAT_ROADTYPES, URD0_road, 22) {
+		property {
+			label:					"EBBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, URD0_road, 22) {
+		property {
+			label:					"URD0";
+		}
+	}
+}
 if (roadtype_available("URD0") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD0_road, 22) {
 		property {
@@ -5135,6 +5373,20 @@ if (roadtype_available("URD0") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //				URBAN ASPHALT ROAD W/ STRIPES (URD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, URD1_road, 24) {
+		property {
+			label:					"ECBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, URD1_road, 24) {
+		property {
+			label:					"URD1";
+		}
+	}
+}
+
 if (roadtype_available("URD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD1_road, 24) {
 		property {
@@ -5172,6 +5424,20 @@ if (roadtype_available("URD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //				GRASS VERGE/NATURE STRIP OF THE ROAD (URD2)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, URD2_road, 26) {
+		property {
+			label:					"EDBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, URD2_road, 26) {
+		property {
+			label:					"URD2";
+		}
+	}
+}
+
 if (roadtype_available("URD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, URD2_road, 26) {
 		property {
@@ -5209,6 +5475,20 @@ if (roadtype_available("URD2") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					PEDESTRIAN ZONE (DRD0)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD0_road, 27) {
+		property {
+			label:					"ZABp";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD0_road, 27) {
+		property {
+			label:					"DRD0";
+		}
+	}
+}
+
 if (param_pedestrian_zone != 0) {
 	item(FEAT_ROADTYPES, DRD0_road, 27) {
 		property {
@@ -5256,6 +5536,20 @@ if (param_pedestrian_zone != 0) {
 //===========================================================
 //					PAVING SLABS (DRD1)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD1_road, 28) {
+		property {
+			label:					"IBBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD1_road, 28) {
+		property {
+			label:					"DRD1";
+		}
+	}
+}
+
 if (roadtype_available("DRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD1_road, 28) {
 		property {
@@ -5294,6 +5588,20 @@ if (roadtype_available("DRD1") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					COBBLE STONES ROAD (DRD2)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD2_road, 30) {
+		property {
+			label:					"IABN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD2_road, 30) {
+		property {
+			label:					"DRD2";
+		}
+	}
+}
+
 if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD2_road, 30) {
 		property {
@@ -5331,6 +5639,20 @@ if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					ISR ROAD (DRD3)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD3_road, 31) {
+		property {
+			label:					"IDBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD3_road, 31) {
+		property {
+			label:					"DRD3";
+		}
+	}
+}
+
 if (roadtype_available("DRD3") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD3_road, 31) {
 		property {
@@ -5378,6 +5700,20 @@ if (roadtype_available("DRD3") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //					CEMENT SLAB OF ROAD (DRD4)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD4_road, 32) {
+		property {
+			label:					"ICBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD4_road, 32) {
+		property {
+			label:					"DRD4";
+		}
+	}
+}
+
 if (roadtype_available("DRD4") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD4_road, 32) {
 		property {
@@ -5425,6 +5761,20 @@ if (roadtype_available("DRD4") || loading_stage == LOADING_STAGE_RESERVE) {
 //===========================================================
 //				ASPHALT CONCRETE ROAD (DRD5)
 //===========================================================
+if (param[0]) {
+	item (FEAT_ROADTYPES, DRD5_road, 33) {
+		property {
+			label:					"IEBN";
+		}
+	}
+} else {
+	item (FEAT_ROADTYPES, DRD5_road, 33) {
+		property {
+			label:					"DRD5";
+		}
+	}
+}
+
 if (roadtype_available("DRD5") || loading_stage == LOADING_STAGE_RESERVE) {
 	item(FEAT_ROADTYPES, DRD5_road, 33) {
 		property {
