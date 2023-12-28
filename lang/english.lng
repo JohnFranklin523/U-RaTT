@@ -16,6 +16,9 @@ STR_GRF_DESCRIPTION_SUBWAY		:Adds a subway in the form of tram tracks. Required 
 
 STR_OPENTTD_VERSION								:13.0
 
+STR_PARAM_STANDARDISATION_NAME          :Use Standardised Road Labels
+STR_PARAM_STANDARDISATION_DESC          :It is advised to turn this parameter off since the project of standardised road label is still in experiment.
+
 STR_PARAM_GUI_NAME		           	        	:GUI
 STR_PARAM_GUI_DESC             		    	    :Displays the corresponding graphical icons and cursors in the OpenTTD style.{}If you have chosen the {SILVER}U&GUI {BLACK}interface style, you need to connect newgrf: {SILVER}U&GUI
 STR_PARAM_GUI_0									:TTD
