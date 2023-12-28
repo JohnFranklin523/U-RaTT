@@ -5,7 +5,14 @@ grf {
 	url:  string(STR_GRF_URL);
 	version: 4;
 	min_compatible_version: 1;
-	param 0 {
+		param 0 {
+			param_standardisation {
+				type: bool;
+				name: string(STR_PARAM_STANDARDISATION_NAME);
+				desc: string(STR_PARAM_STANDARDISATION_DESC);
+			}
+		}
+	param 1 {
         param_gui {
             type: int;
             name: string(STR_PARAM_GUI_NAME);
@@ -20,7 +27,7 @@ grf {
 			};
 		}
 	}
-	param 1 {
+	param 2 {
         param_road_available {
             type: int;
             name: string(STR_PARAM_ROAD_AVAILABLE_NAME);
@@ -34,7 +41,7 @@ grf {
 			};
 		}
 	}
-	param 2 {
+	param 3 {
         param_ordx_speed {
             type: int;
             name: string(STR_PARAM_ORDX_SPEED_NAME);
@@ -49,7 +56,7 @@ grf {
 			};
 		}
 	}
-	param 3 {
+	param 4 {
         param_ardx_speed {
             type: int;
             name: string(STR_PARAM_ARDX_SPEED_NAME);
@@ -66,7 +73,7 @@ grf {
  			};
 		}
 	}
-	param 4 {
+	param 5 {
         param_urdx_speed {
             type: int;
             name: string(STR_PARAM_URDX_SPEED_NAME);
@@ -82,7 +89,7 @@ grf {
 			};
 		}
 	}
-	param 5 {
+	param 6 {
         param_drdx_speed {
             type: int;
             name: string(STR_PARAM_DRDX_SPEED_NAME);
@@ -98,7 +105,7 @@ grf {
 			};
 		}
 	}
-	param 6 {
+	param 7 {
 	param_WRD0_speed {
 	    type: int;
 	    name: string(STR_PARAM_WRD0_SPEED_NAME);
@@ -111,7 +118,7 @@ grf {
 			};
 		}
 	}
-	param 7 {
+	param 8 {
         param_pedestrian_zone {
             type: int;
             name: string(STR_PEDESTRIAN_ZONE_NAME);
@@ -127,7 +134,7 @@ grf {
 			};
 		}
 	}			
-	param 8 {
+	param 9 {
         param_style {
             type: int;
             name: string(STR_PARAM_STYLE_NAME);
@@ -141,7 +148,7 @@ grf {
 			};
 		}
 	}
-	param 9 {
+	param 10 {
 	param_menu_text {
 	type: bool;
 	name: string(STR_PARAM_MENU_NAME);
@@ -149,7 +156,7 @@ grf {
 	def_value: 1;
 		}
 	}
-	param 10 {
+	param 11 {
 	param_disable {
 	type: bool;
 	name: string(STR_PARAM_DISABLE_NAME);
@@ -157,7 +164,7 @@ grf {
 	def_value: 0;
 		}
 	}
-	param 11 {
+	param 12 {
 	param_WRD1_speed {
 	    type: int;
 	    name: string(STR_PARAM_WRD1_SPEED_NAME);
