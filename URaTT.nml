@@ -4341,23 +4341,80 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 //===========================================================
 //					ROAD (ROAD)
 //===========================================================
-	item(FEAT_ROADTYPES, ROAD_road, 0) {
-		property {
-//			label:					"ROAD";
-			name: 					string(STR_NAME_ROAD);
-			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-								 "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
-			introduces_roadtype_list:		["ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "DRD2"];
-			roadtype_flags:				bitmask(ROADTYPE_FLAG_HIDDEN);
-			speed_limit:				(speed_limit_ROAD) km/h;
-			sort_order:				0;
+if (param[0]) {
+	if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
+		item(FEAT_ROADTYPES, ROAD_road, 0) {
+			property {
+				label:                      ROAD";
+				powered_roadtype_list:      	[
+												"ROAD", "OLD_",
+												"RAaN", "RBaN", "RAAN", "RBAN", "RCAN",
+												"RABN", "RBBN", "RCBN", "RDBN", "REBN",
+												"RACN", "RBCN", "RAAE", "RABE", "RBBE",
+												"RCBE", "RDBE", "REBE", "IABN", "IBBN",
+												"ICBN", "IABE", "IBBE", "ICBE",
+												"JF01", "JF02", "JF03", "JF04", "JF05", "JF06", "JF07", "JF08", "JF09", "JF10",
+												"JF11", "JF12", "JF13", "JF14", "JF15", "JF16", "JF17", "JF18", "JF19", "JF20",
+												"JF21", "JF22", "JF23", "JF24",
+												"ACLK",
+												"AR11", "AR12", "AR13", "AR14",
+												"AR21", "AR22", "AR23", "AR24",
+												"AR31", "AR32", "AR33", "AR34",
+												"ELSP", "ALSP", "ELRD", "AR21",
+												"ELA1", "AR22", "ELA2", "AR24",
+												"ELA0",
+												"ALA0",
+												"ASP0", "ASP1", "ASP2",
+												"FUEL", "SAND",
+												"COBB", "COB2", "COB3", "COB4",
+												"BEAC", "HWAY", "DIRT", "SETT",
+												"ISR1", "ISR2",
+												"AUZ1", "AUZ2", "AUZ3", "AUZ4", "AUZ5", "AUZ6", "AUZ7", "AUZ8", "AUZ9", "AUZ0",
+												"AUZA", "AUZB", "AUZC", "AUZD", "AUZE", "AUZF", "AUZG", "AUZH", "AUZI", "AUZJ", "AUZK", "AUZL", "AUZM", "AUZY", "AUZZ",
+												"FWAY", "YARD", "COAL", "HAUL",
+												"OFFR",
+												"ORD0",	"ORD1",	"ORD2",	"ORD3",	"ORD4",
+												"SRD0",	"SRD1",	"SRD2",
+												"ARD0",	"ARD1",	"AER0",	"ARD2",	"ARD3",	"AER1",	"ARD4",	"ARD5",	"AER2",
+												"WRD0",	"WRD1",
+												"URD0",	"URD1",	"UER1",
+												"IRD0",	"IRD1",
+												"BIKE", "BRIC",
+												"NL30", "NL50", "NL5F", "NL60", "NL80", "NL10", "NL12",
+												"RAAS", "RABS", "RACS", "SMRT", "SMTS",
+												"pABP", "pABS", "PIPE"];
+				alternative_roadtype_list:		[
+												"RABN"
+												];
+				roadtype_flags:				 bitmask(ROADTYPE_FLAG_HIDDEN);
 			}
+		} else { //disable_item(FEAT_ROADTYPES, item_country_asphalt_road2, 0);
+	}
+} else {
+	if (roadtype_available("DRD2") || loading_stage == LOADING_STAGE_RESERVE) {
+		item(FEAT_ROADTYPES, ROAD_road, 0) {
+			property {
+				label:						"ROAD";
+				name: 							string(STR_NAME_ROAD);
+				powered_roadtype_list: 			[
+												"ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
+												"ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+												"DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+												"ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"
+												];
+				alternative_roadtype_list:		[
+												"ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
+												"ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+												"DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+												"ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"
+												];
+				introduces_roadtype_list:		[
+												"ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "DRD2"
+												];
+				roadtype_flags:				bitmask(ROADTYPE_FLAG_HIDDEN);
+				speed_limit:				(speed_limit_ROAD) km/h;
+				sort_order:				0;
+				}
 	if (param_pedestrian_zone > 1) {
 		property {
 			powered_roadtype_list:			["DRD0"];
@@ -4384,6 +4441,9 @@ switch (FEAT_ROADTYPES, SELF, switch_ROAD_NORMAL_tunnels, param_road_available) 
 			}
 		}
 	}
+	} else { //disable_item(FEAT_ROADTYPES, ROAD_road, 0);
+}
+
 //===========================================================
 //					FIELD ROAD (ORD0)
 //===========================================================
@@ -4410,14 +4470,16 @@ if (roadtype_available("ORD0") || loading_stage == LOADING_STAGE_RESERVE) {
 			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_ROAD);
 			autoreplace_text: 			string(STR_AUTOREPLACE_ROAD);
 			new_engine_text: 			string(STR_NEW_ENGINE_ROAD);
-			powered_roadtype_list: 			["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+			powered_roadtype_list: 			[
+								
+								"ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
+								"ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								"DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
 								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			alternative_roadtype_list:		["ROAD", "ORD0", "ORD1", "ORD2", "ORD3", "ORD4", "SRD0", "SRD1", "SRD2",
-								 "ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
-								 "DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
-								 "ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
+								"ARD0", "ARD1", "ARD2", "ARD3", "ARD4", "ARD5", "WRD0", "WRD1", "URD0", "URD1", "URD2",
+								"DRD0", "DRD1", "DRD2", "DRD3", "DRD4", "DRD5", 
+								"ELRD", "AER0", "AER1", "AER3", "AER5", "UER0", "UER1", "DER1"];
 			roadtype_flags:				bitmask(ROADTYPE_FLAG_NO_LEVEL_CROSSING, ROADTYPE_FLAG_NO_HOUSES);
 			construction_cost:			3;
 			maintenance_cost: 			3;
