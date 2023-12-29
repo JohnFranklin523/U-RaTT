@@ -332,15 +332,20 @@ spriteset(catenary_front_lignting_left, "gfx/CATENARY/FRONT_LIGHTING_LEFT.png") 
 //===========================================================
 item(FEAT_TRAMTYPES, LT0_tram, 58) {
 		property {
-			label:							"LT0_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
+			label:						"EABi";
+			name: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
 			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
+			menu_text: 					string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_BOTH));
+			build_window_caption: 				string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
-			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
+			powered_tramtype_list: 				[
+									"EAAi", "EABi", "EACi",
+									"ElBi", "ErBi"
+									];
+//									["LT0_", "LT1_", "LT2_"];
+//			alternative_tramtype_list:			["EAAi", "EABi", "EACi"];
+//									["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
@@ -359,17 +364,22 @@ item(FEAT_TRAMTYPES, LT0_tram, 58) {
 //===========================================================
 //					LIGHTING (RIGHT) (LT1_)
 //===========================================================
-item(FEAT_TRAMTYPES, LT1_tram, 59) {
+item(FEAT_TRAMTYPES, LT1_tram, 60) {
 		property {
-			label:							"LT1_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
+			label:						"ErBi";
+			name: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
 			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
+			menu_text: 					string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_RIGHT));
+			build_window_caption: 				string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
-			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
+			powered_tramtype_list: 				[
+									"EAAi", "EABi", "EACi",
+									"ElBi", "ErBi"
+									];
+//									["LT0_", "LT1_", "LT2_"];
+//			alternative_tramtype_list:			["EAAi", "EABi", "EACi"];
+//									["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
@@ -388,17 +398,22 @@ item(FEAT_TRAMTYPES, LT1_tram, 59) {
 //===========================================================
 //					LIGHTING (LEFT) (LT2_)
 //===========================================================
-item(FEAT_TRAMTYPES, LT2_tram, 60) {
+item(FEAT_TRAMTYPES, LT2_tram, 59) {
 		property {
-			label:							"LT2_";
-			name: 							string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
+			label:						"ElBi";
+			name: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
 			toolbar_caption: 				string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
-			menu_text: 						string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
-			build_window_caption: 			string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
+			menu_text: 					string(STR_STRING_2, string(STR_NAME_LIGHTING), string(STR_LEFT));
+			build_window_caption: 				string(STR_BUILD_WINDOW_CAPTION_TRAM_EL);
 			autoreplace_text: 				string(STR_AUTOREPLACE_TRAM_EL);
 			new_engine_text: 				string(STR_NEW_ENGINE_TRAM_EL);
-			powered_tramtype_list: 			["LT0_", "LT1_", "LT2_"];
-			alternative_tramtype_list:		["LT0_", "LT1_", "LT2_"];
+			powered_tramtype_list: 				[
+									"EAAi", "EABi", "EACi",
+									"ElBi", "ErBi"
+									];
+//									["LT0_", "LT1_", "LT2_"];
+//			alternative_tramtype_list:			["EAAi", "EABi", "EACi"];
+//									["LT0_", "LT1_", "LT2_"];
 			tramtype_flags: 				bitmask(TRAMTYPE_FLAG_CATENARY, TRAMTYPE_FLAG_NO_LEVEL_CROSSING);
 			introduction_date:				date(1960,01,01);
 			construction_cost: 				20;
