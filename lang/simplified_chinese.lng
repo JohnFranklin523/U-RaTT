@@ -39,7 +39,7 @@ STR_PARAM_URDX_SPEED_DESC						:更改城镇柏油路限速.
 STR_PARAM_DRDX_SPEED_NAME						:"装饰性" 道路限速
 STR_PARAM_DRDX_SPEED_DESC						:更改 "装饰性" 道路限速.
 
-STR_PARAM_HARD_MODE                             :困难模式: 城镇只建设三级公路, 且一级公路不允许房屋生成
+STR_PARAM_HARD_MODE                             :困难模式: 城镇只建设城镇柏油路, 且一级公路不允许房屋生成
 STR_PARAM_SPEED_SLOW							:慢
 STR_PARAM_SPEED_DEFAULT							:默认
 STR_PARAM_SPEED_FAST							:快

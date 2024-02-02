@@ -39,7 +39,7 @@ STR_PARAM_URDX_SPEED_DESC						:For players who want to choose speed limits on a
 STR_PARAM_DRDX_SPEED_NAME						:Speed limit on all "decorative" roads
 STR_PARAM_DRDX_SPEED_DESC						:For players who want to choose speed limits on all "decorative" roads.
 
-STR_PARAM_HARD_MODE                             :Hard Mode where towns only build Class C types, and Class A types do not allow houses
+STR_PARAM_HARD_MODE                             :Hard Mode where towns only build urban asphalt types, and Class A types do not allow houses
 STR_PARAM_SPEED_SLOW							:Slow
 STR_PARAM_SPEED_DEFAULT							:Default
 STR_PARAM_SPEED_FAST							:Fast
